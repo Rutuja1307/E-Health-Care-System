@@ -1,0 +1,70 @@
+{% extends 'hospital/drugs_base.html' %}
+{% block content %}
+{%load static%}
+
+<head>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <style media="screen">
+        a:link {
+            text-decoration: none;
+        }
+
+        h6 {
+            text-align: center;
+        }
+
+        .row {
+            margin: 100px;
+
+        }
+    </style>
+</head>
+<!--
+written By : siddhesh kumar
+facebook : fb.com/siddhesh.luv
+-->
+<div class="container">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h6 class="panel-title">Pharmacist</h6>
+        </div>
+        <table class="table table-hover" id="dev-table">
+            <thead>
+                <tr>
+
+                <tr>
+                    <th>Picture</th>
+                    <th>Drug Name</th>
+                    <th>Category</th>
+                    <th>Quantity</th>
+                    <th>Price / Drug</th>
+                    <th>Stock Date</th>
+                    <th>Expiry Date</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            {% for s in stock %}
+            <tr>
+                <td> <img src="{% static s.profile_pic.url %}" alt="Profile Pic" height="70px" width="70px" /></td>
+                <td>{{s.drugname }}</td>
+                <td>{{s.category}}</td>
+                <td>{{s.quantity}}</td>
+                <td>{{s.price}}</td>
+                <td>{{s.datestock}}</td>
+                <td>{{s.expirydate}}</td>
+                <td><a class="btn btn-primary btn-xs" href="{% url 'update-stock' s.id  %}"><span
+                            class="glyphicon glyphicon-edit"></span></a></td>
+                <td><a class="btn btn-danger btn-xs" href="{% url 'delete-stock' s.id  %}"><span
+                            class="glyphicon glyphicon-trash"></span></a></td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</div>
+
+
+{% endblock content %}

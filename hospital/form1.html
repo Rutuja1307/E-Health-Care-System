@@ -1,0 +1,44 @@
+import mysql.connector
+import webbrowser
+
+conn = mysql.connector.connect(user='root', password='' host='localhost',database='userdb')
+
+if conn:
+    print ("Connected Successfully")
+else:
+    print ("Connection Not Established")
+
+select_user = "SELECT * FROM user_table"
+cursor = conn.cursor()
+cursor.execute(select_user)
+result = cursor.fetchall()
+
+p = []
+
+tbl = "<tr><td>Name</td><td>Mobile No</td><td>Email</td></tr>"
+p.append(tbl)
+
+for row in result:
+   
+    b = "<td>%s</td>"%row[1]
+    p.append(b)
+    c = "<td>%s</td>"%row[2]
+    p.append(c)
+    d = "<td>%s</td></tr>"%row[3]
+    p.append(d)
+
+
+filename = 'form.html'
+
+def main(contents, form.html):
+    output = open(filename,"w")
+    output.write(contents)
+    output.close()
+
+main(contents, filename)    
+webbrowser.open(filename)
+
+if(conn.is_connected()):
+    cursor.close()
+    conn.close()
+    print("MySQL connection is closed.")    

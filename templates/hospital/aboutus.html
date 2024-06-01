@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Samarth Hospital</title>
+  <style media="screen">
+    .jumbotron {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    .jumbotron h1 {
+      text-align: center;
+    }
+
+    .alert {
+      /* margin-top: 10px; */
+      margin: 0px;
+    }
+  </style>
+  <title>Samarth Hospital</title>
+</head>
+
+<body>
+  {% include "hospital/navbar.html" %}
+  <br /><br />
+  <center>
+    <h3 class="alert alert-success" style="margin-bottom: 0px">About Us !</h3>
+  </center>
+  <div class="jumbotron" style="margin-bottom: 0px; margin-top: 0px ">
+    <h1 class="display-4">OUR SERVICE</h1>
+    <p class="lead">
+      A service dedicated to Hospital Admin, Doctor, Patient, Nurse and Pharmacist.
+    </p>
+    <hr class="my-4" />
+
+    <p><b>*************Our Mission************</p></b>
+    <p>Empowering individuals to take control of their health journey through innovative
+      technology and compassionate care.</p>
+    <!-- <p>Explore our Website.</p> -->
+    <!-- <h2>Our Mission</h2> -->
+    <!-- <p>Our mission is to empower individuals to take control of their health journey through advanced technology and
+    <h2>Who We Are</h2>
+    <p>[Your Company Name] was founded in [Year] with a vision to revolutionize the healthcare industry by leveraging
+      technology. Our diverse team comprises healthcare professionals, technologists, designers, and entrepreneurs,
+      united by a commitment to improving healthcare delivery.</p>
+    -->
+    <p><b>*************Our Values************</p></b>
+    <p>
+      <center>
+        <strong>Patient-Centricity:</strong> We prioritize the needs and well-being of patients above all else.
+        <br>
+        <strong>Innovation:</strong> We constantly strive to push the boundaries of what's possible in healthcare
+        technology.
+        <br>
+        <strong>Integrity:</strong> We uphold the highest ethical standards in all our interactions and decisions.
+        <br>
+        <strong>Collaboration:</strong> We believe in the power of teamwork and collaboration to drive meaningful
+        change.
+        <br>
+        <strong>Empathy:</strong> We approach every interaction with empathy and understanding, recognizing the
+        uniquechallenges each individual faces in their health journey.
+      </center>
+    </p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="/" role="button">HOME</a>
+    </p>
+  </div>
+  {% include "hospital/footer.html" %}
+</body>
+
+</html>

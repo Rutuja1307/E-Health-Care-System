@@ -1,0 +1,25 @@
+{% extends 'hospital/homebase.html' %}
+
+
+{% block content %}
+<style>
+    .jumbotron {
+        height: 400px;
+
+    }
+</style>
+<br>
+<br>
+
+<div class="jumbotron" style="margin-bottom:0px;">
+    <h1 class="display-4" style="text-align:center;">Hello, Nurse......!!!</h1>
+    <p class="lead">Welcome to Samarth Hospital.</p>
+    <hr class="my-4">
+    <p>You can access various features after Sign Up/ Login.</p>
+    <p class="lead">
+        <a class="btn btn-primary btn-lg" href="/nursesignup" role="button">Sign Up</a>
+        <a class="btn btn-primary btn-lg" href="/nurselogin" role="button">Login</a>
+    </p>
+</div>
+
+{% endblock content %}
