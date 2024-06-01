@@ -1,17 +1,6 @@
 
-# Hospital Management
-![developer](https://img.shields.io/badge/Developed%20By%20%3A-siddhesh%20Kumar-red)
----
-## screenshots
-### Homepage
-![homepage snap](https://github.com/siddheshkumar1503/hospitalmanagement/blob/master/static/screenshots/homepage.png?raw=true)
-### Admin Dashboard
-![dashboard snap](https://github.com/siddheshkumar1503/hospitalmanagement/blob/master/static/screenshots/admin_dashboard.png?raw=true)
-### Invoice
-![invoice snap](https://github.com/siddheshkumar1503/hospitalmanagement/blob/master/static/screenshots/invoice.png?raw=true)
-### Doctor list
-![doctor snap](https://github.com/siddheshkumar1503/hospitalmanagement/blob/master/static/screenshots/admin_doctor.png?raw=true)
----
+# E-HEALTH CARE SYSTEM
+
 ## Functions
 ### Admin
 - Signup their account. Then Login (No approval Required).
@@ -34,6 +23,12 @@
 - Can book appointments.(approval required by admin)
 - Can view/download Invoice pdf (Only when that patient is discharged by admin).
 
+### Pharmacist
+- Create account for admit in hospital. Then Login (Approval required by hospital admin, Then only pharmacist can login).
+- All the medicines and their information in the hospital are managed by the pharmacists.
+- He/she can view which medicines are in the stocks and which are to be needed.
+- He/she can manage all drugs in stocks.
+- When the patient provides the prescription to the pharmacist, the pharmacist can provide the appropriate medications to the concerned patient.
 ---
 
 ## HOW TO RUN THIS PROJECT
